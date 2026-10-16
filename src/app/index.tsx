@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   const [clicked, setClicked] = useState(false);
+  const [numri, setNumri] = useState(0);
 
   return (
     <View style={styles.container}>
@@ -29,6 +30,19 @@ export default function Index() {
         >
           <Text style={styles.buttonText}>
             {clicked ? "Klikove me sukses! ✓" : "Kliko ketu"}
+          </Text>
+        </Pressable>
+
+        <Text style={styles.counter}>
+          Numri i klikimeve: {numri}
+        </Text>
+
+        <Pressable
+          style={styles.button}
+          onPress={() => setNumri(n => n + 1)}
+        >
+          <Text style={styles.buttonText}>
+            Rrit numrin +1
           </Text>
         </Pressable>
 
@@ -90,12 +104,18 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 28,
     borderRadius: 12,
-    marginTop: 24,
+    marginTop: 20,
   },
   buttonText: {
     color: "#FFFFFF",
     fontSize: 16,
     fontWeight: "bold",
+  },
+  counter: {
+    fontSize: 16,
+    color: "#2457C5",
+    fontWeight: "bold",
+    marginTop: 20,
   },
   footer: {
     marginTop: 24,
