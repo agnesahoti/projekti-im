@@ -1,6 +1,9 @@
-import { Text, View, StyleSheet } from "react-native";
+import { useState } from "react";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
+  const [clicked, setClicked] = useState(false);
+
   return (
     <View style={styles.container}>
       <View style={styles.card}>
@@ -19,6 +22,15 @@ export default function Index() {
         <Text style={styles.message}>
           Ky projekt eshte krijuar me React Native dhe Expo.
         </Text>
+
+        <Pressable
+          style={styles.button}
+          onPress={() => setClicked(!clicked)}
+        >
+          <Text style={styles.buttonText}>
+            {clicked ? "Klikove me sukses! ✓" : "Kliko ketu"}
+          </Text>
+        </Pressable>
 
         <Text style={styles.footer}>
           Zhvillimi i Aplikacioneve Mobile
@@ -72,6 +84,18 @@ const styles = StyleSheet.create({
     color: "#4B5563",
     textAlign: "center",
     lineHeight: 23,
+  },
+  button: {
+    backgroundColor: "#2457C5",
+    paddingVertical: 14,
+    paddingHorizontal: 28,
+    borderRadius: 12,
+    marginTop: 24,
+  },
+  buttonText: {
+    color: "#FFFFFF",
+    fontSize: 16,
+    fontWeight: "bold",
   },
   footer: {
     marginTop: 24,
