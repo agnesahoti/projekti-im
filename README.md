@@ -1,56 +1,220 @@
-# Welcome to your Expo app 👋
+# 📅 Rezervo Online
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+### 📲 Rezervo termin. Shmang pritjen. Menaxho kohën më mirë.
 
-## Get started
+**Rezervo Online** është një aplikacion mobil për rezervimin e termineve dhe menaxhimin e radhëve virtuale te bizneset e vogla, si berberët, mjekët privatë dhe sallonet e bukurisë.
 
-1. Install dependencies
+Klientët mund të gjejnë biznese, të zgjedhin shërbimin, ditën dhe orën e dëshiruar, si dhe të shohin statusin e rezervimit dhe radhën e tyre. Ndërsa pronarët mund t'i menaxhojnë terminet e ditës nga një ekran i vetëm.
 
-   ```bash
-   npm install
-   ```
+🎯 **Qëllimi i projektit:** Zhvillimi i një aplikacioni Android me potencial për publikim në Google Play Store.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 💡 Problemi që zgjidhim
 
-In the output, you'll find options to open the app in a
+Shumë biznese të vogla ende i menaxhojnë terminet përmes fletoreve ose telefonatave. Si rezultat, klientët shpesh presin në lokal pa e ditur se sa do të zgjasë pritja.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+**Rezervo Online** synon ta bëjë këtë proces më të thjeshtë dhe më efikas duke mundësuar:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📱 Rezervimin e termineve direkt nga telefoni.
+- ⏳ Informimin për numrin e personave para klientit.
+- 🔔 Kujtesa për terminet e rezervuara, si funksion i planifikuar.
+- 🗓️ Organizimin dhe menaxhimin më të lehtë të termineve për pronarët.
 
-## Get a fresh project
+## ✨ Funksionalitetet aktuale
 
-When you're ready, run:
+Projekti është aktualisht një **prototip funksional me të dhëna shembull**, pa server ose bazë të dhënash të lidhur.
+
+### 🏠 1. Kryefaqja
+
+- Lista e bizneseve.
+- 🔍 Kërkimi sipas emrit të biznesit.
+- 🏷️ Filtrimi sipas kategorisë: Berber, Mjek dhe Salon.
+
+### 📆 2. Rezervimi i terminit
+
+- Zgjedhja e shërbimit.
+- Përzgjedhja e ditës dhe orës.
+- 🚫 Orët e zëna nuk mund të zgjidhen.
+
+### 🎫 3. Termini im
+
+- Konfirmimi i rezervimit.
+- 🔢 Numri i personave para klientit.
+- ⏱️ Koha e parashikuar e pritjes.
+- ❌ Anulimi i terminit me konfirmim.
+
+### 💼 4. Paneli i pronarit
+
+- 📋 Shfaqja e termineve të ditës.
+- 🔄 Menaxhimi i statuseve: **Pret, Në karrige, Përfundoi**.
+- 📣 Butoni “Thirr klientin tjetër”.
+
+## 🚧 Funksionalitetet që planifikohen
+
+Disa funksione ende nuk janë implementuar dhe do të zhvillohen në fazat e ardhshme:
+
+- 🗄️ Integrimi me një server dhe bazë të dhënash.
+- 🔐 Krijimi i llogarive dhe hyrja për klientët e pronarët.
+- ⚡ Përditësimi në kohë reale i radhës virtuale.
+- 🔔 Njoftimet push dhe kujtesat automatike.
+- 💳 Pagesat online.
+- ⭐ Vlerësimet dhe komentet për bizneset.
+- 📍 Harta dhe lokacionet e bizneseve.
+
+## 🛠️ Teknologjitë e përdorura
+
+| Teknologjia | Përdorimi |
+|---|---|
+| ⚛️ React Native | Zhvillimi i aplikacionit mobil |
+| 🚀 Expo SDK 58 | Zhvillimi dhe testimi i aplikacionit |
+| 📘 TypeScript | Shkrimi i kodit me tipe të përcaktuara |
+| 🧭 Expo Router | Navigimi ndërmjet ekraneve |
+| 🔄 React Context | Menaxhimi i gjendjes së përbashkët të rezervimeve |
+| 🎨 `@expo/vector-icons` | Ikonat e ndërfaqes |
+
+## 🚀 Si ta instalosh dhe ta ekzekutosh
+
+### Kërkesat paraprake
+
+- [Node.js](https://nodejs.org/) — rekomandohet versioni LTS.
+- [Expo Go](https://expo.dev/go) — për testimin e aplikacionit në telefon.
+- Git — për klonimin e projektit.
+- Një kompjuter dhe telefon me lidhje interneti.
+
+### Hapat e instalimit
+
+**1. Klonoje projektin**
 
 ```bash
-npm run reset-project
+git clone <linku-i-repozitorit>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**2. Hyr në dosjen e projektit**
 
-### Other setup steps
+```bash
+cd <emri-i-dosjes>
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+**3. Instalo varësitë**
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+**4. Nise aplikacionin**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+**5. Hape në telefon 📲**
 
-Join our community of developers creating universal apps.
+Skano kodin QR me Expo Go në Android. Nëse lidhja lokale nuk funksionon, provo:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start --tunnel
+```
+
+> ℹ️ Sigurohu që versioni i Expo Go të jetë i përputhshëm me versionin e Expo SDK që përdor projekti.
+
+## 📂 Struktura e projektit
+
+```text
+app/
+├── _layout.tsx
+├── (tabs)/
+│   ├── _layout.tsx
+│   ├── index.tsx
+│   ├── terminet.tsx
+│   └── pronari.tsx
+└── biznes/
+    └── [id].tsx
+
+components/
+└── BiznesKarte.tsx
+
+constants/
+└── ngjyrat.ts
+
+context/
+└── TerminiContext.tsx
+
+data/
+└── bizneset.ts
+
+utils/
+└── data.ts
+```
+
+📌 **Përshkrimi i dosjeve kryesore:**
+
+- `app/` — ekranet dhe navigimi i aplikacionit.
+- `components/` — komponentët e ripërdorshëm të ndërfaqes.
+- `constants/` — ngjyrat dhe konfigurimet e përbashkëta.
+- `context/` — gjendja e përbashkët e rezervimeve.
+- `data/` — të dhënat shembull të bizneseve.
+- `utils/` — funksionet ndihmëse për datat dhe oraret.
+
+## 📑 Dokumentet e projektit
+
+Dokumentet e mëposhtme përmbajnë informacione shtesë rreth projektit:
+
+- 👥 [EKIPI.md](EKIPI.md) — anëtarët e ekipit dhe përdoruesi i parë.
+- 💬 [BISEDAT.md](BISEDAT.md) — bisedat me persona që përballen me problemin.
+- 🗺️ [HARTA.md](HARTA.md) — rrjedha e aplikacionit dhe kufijtë e versionit fillestar (MVP).
+- 🎤 [PITCH.md](PITCH.md) — prezantimi njëminutësh i projektit.
+
+## 🛣️ Plani i zhvillimit
+
+| Faza | Përshkrimi |
+|---|---|
+| ✅ 1 | Krijimi i prototipit me të dhëna shembull |
+| 🔜 2 | Integrimi me Supabase ose Firebase |
+| 🔜 3 | Krijimi i llogarive për klientët dhe pronarët |
+| 🔜 4 | Implementimi i radhës në kohë reale dhe njoftimeve |
+| 🔜 5 | Testimi me të paktën dy biznese reale |
+| 🎯 6 | Përgatitja dhe publikimi në Google Play Store |
+
+## 📸 Pamje nga aplikacioni
+
+Pamjet e ekranit do të shtohen këtu për të paraqitur ndërfaqen dhe funksionalitetet e aplikacionit.
+
+### 🏠 1. Kryefaqja
+
+Faqja kryesore ku përdoruesit mund të kërkojnë biznese dhe të zgjedhin kategorinë e dëshiruar.
+
+![Kryefaqja e Rezervo Online](docs/01-Kryefaqja.jpg)
+
+### 📅 2. Terminet
+
+Ekrani ku përdoruesit mund të shohin dhe menaxhojnë rezervimet e tyre.
+
+![Terminet e Rezervo Online](docs/02-Terminet.jpg)
+
+### 💼 3. Paneli i pronarit
+
+Pamja ku pronari mund të menaxhojë terminet dhe statusin e klientëve.
+
+![Paneli i pronarit i Rezervo Online](docs/03-Pronari.jpg)
+
+---
+
+
+
+
+## 👥 Ekipi i projektit
+
+- **Anëtari 1:** [Agnesa Hoti](https://github.com/agnesahoti/projekti-im)
+
+
+## 🎓 Informacion rreth projektit
+
+- **Lënda:** Zhvillimi i Aplikacioneve Mobile
+- **Lloji:** Aplikacion mobil Android
+- **Emri i projektit:** Rezervo Online
+- **Statusi:** Prototip funksional në zhvillim
+
+---
+
+⭐ **Rezervo Online — më pak pritje, më shumë kohë për gjërat që kanë rëndësi!**
