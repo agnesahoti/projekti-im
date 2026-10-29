@@ -202,10 +202,30 @@ Pamja ku pronari mund të menaxhojë terminet dhe statusin e klientëve.
 
 
 
+### 💼 3. Paneli i pronarit
+
+Pamja ku pronari mund të menaxhojë terminet dhe statusin e klientëve.
+
+![Paneli i pronarit i Rezervo Online](docs/03-Pronari.jpg)
+
+---
+
+
+
+### 💼 3. Paneli i pronarit
+
+Pamja ku pronari mund të menaxhojë terminet dhe statusin e klientëve.
+
+![Paneli i pronarit i Rezervo Online](docs/03-Pronari.jpg)
+
+---
+
+
+
 
 ## 👥 Ekipi i projektit
 
-- **Anëtari 1:** [Agnesa Hoti](https://github.com/agnesahoti/projekti-im)
+- **Anëtar-ja:** [Agnesa Hoti](https://github.com/agnesahoti/projekti-im)
 
 
 ## 🎓 Informacion rreth projektit
