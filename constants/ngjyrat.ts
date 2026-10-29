@@ -1,0 +1,15 @@
+export const ngjyrat = {
+  sfondi: "#F4F6F8",
+  bardhe: "#FFFFFF",
+  teksti: "#0F1B2D",
+  gri: "#5B6675",
+  griEErret: "#3F4A58",
+  kufiri: "#E1E6EC",
+  kufiriIErret: "#C5CDD6",
+  joAktiv: "#EEF1F4",
+  kryesore: "#0B7A5C",
+  kryesoreEErret: "#085C45",
+  kryesoreEZbehte: "#E3F3EE",
+  kryesoreKufi: "#BFE0D5",
+  naten: "#0F1B2D",
+};
