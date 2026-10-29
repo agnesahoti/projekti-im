@@ -180,47 +180,23 @@ Dokumentet e mëposhtme përmbajnë informacione shtesë rreth projektit:
 
 Pamjet e ekranit do të shtohen këtu për të paraqitur ndërfaqen dhe funksionalitetet e aplikacionit.
 
-### 🏠 1. Kryefaqja
 
-Faqja kryesore ku përdoruesit mund të kërkojnë biznese dhe të zgjedhin kategorinë e dëshiruar.
+### 🏠 1. Kryefaqja
+Pamja kryesore ku përdoruesit mund të kërkojnë biznese dhe të zgjedhin kategorinë e dëshiruar.
 
 ![Kryefaqja e Rezervo Online](docs/01-Kryefaqja.jpg)
 
 ### 📅 2. Terminet
-
-Ekrani ku përdoruesit mund të shohin dhe menaxhojnë rezervimet e tyre.
+Pamja ku përdoruesit mund të shohin terminet dhe rezervimet e tyre.
 
 ![Terminet e Rezervo Online](docs/02-Terminet.jpg)
 
 ### 💼 3. Paneli i pronarit
-
 Pamja ku pronari mund të menaxhojë terminet dhe statusin e klientëve.
 
 ![Paneli i pronarit i Rezervo Online](docs/03-Pronari.jpg)
 
 ---
-
-
-
-### 💼 3. Paneli i pronarit
-
-Pamja ku pronari mund të menaxhojë terminet dhe statusin e klientëve.
-
-![Paneli i pronarit i Rezervo Online](docs/03-Pronari.jpg)
-
----
-
-
-
-### 💼 3. Paneli i pronarit
-
-Pamja ku pronari mund të menaxhojë terminet dhe statusin e klientëve.
-
-![Paneli i pronarit i Rezervo Online](docs/03-Pronari.jpg)
-
----
-
-
 
 
 ## 👥 Ekipi i projektit
